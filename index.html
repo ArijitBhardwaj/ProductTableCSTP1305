@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Table</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Product Table</h2>
+    <div class="form-group row">
+        <label for="sortCriteria" class="col-sm-2 col-form-label">Sort by:</label>
+        <div class="col-sm-4">
+            <select id="sortCriteria" class="form-control">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="description">Description</option>
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <button class="btn btn-primary" onclick="sortTable()">Sort</button>
+        </div>
+    </div>
+
+    <table id="productTable" class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
